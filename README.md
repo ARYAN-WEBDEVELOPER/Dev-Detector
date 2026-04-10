@@ -1,4 +1,6 @@
 Dev Detective (GitHub Search App)
+
+
 A modern and responsive web app that allows users to search GitHub profiles, view repositories, and compare developers using real-time API data.
 
 🌐 Live Demo
