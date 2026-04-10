@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  color: #e6edf3;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #238636;
+  color: white;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+/* Profile Card */
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Image */
+img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Repos Section */
+#repos {
+  margin-top: 25px;
+}
+
+.repos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.repo {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.repo a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Battle Mode */
+#battleResult {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.battle-card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.battle-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #58a6ff;
+}
+
+.winner {
+  border: 2px solid green;
+}
+
+.loser {
+  border: 2px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .repos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+  #battleResult {
+    flex-direction: row;
+  }
+
+  .battle-card {
+    width: 48%;
+  }
+}
